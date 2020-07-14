@@ -1,5 +1,6 @@
 Blog
-
+username:admin@gmail.com
+password:rootadmin.
 Description:
 
  In this website admin can add,delete or change the post,category,tag and user .User  can create  post.But post published depend on admin.
