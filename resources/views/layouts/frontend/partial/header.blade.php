@@ -2,13 +2,15 @@
 <header>
 		<div class="container-fluid position-relative no-side-padding">
 
-			<a href="#" class="logo"><img src="images/logo.png" alt="Logo Image"></a>
+			<a href="{{route('home')}}" class="logo"><img src="{{ asset('assets/frontend/images/logo.png') }}" alt="Logo Image"></a>
 
 			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
 			<ul class="main-menu visible-on-click" id="main-menu">
 				<li><a href="{{route('home')}}">Home</a></li>
                 <li><a href="{{ route('post.index') }}">Post</a></li>
+                <li><a href="#">Features</a></li>
+
                 @guest
                 <li><a href="{{ route('login') }}">Login</a></li>
 
@@ -21,12 +23,11 @@
                 <li><a href="{{ route('author.dashboard') }}">Dashboard</a></li>
                 @endif
                 @endguest
-				<li><a href="#">Features</a></li>
 			</ul><!-- main-menu -->
 
 			<div class="src-area">
 				<form method='GET' action="{{ route('search') }}">
-				
+
 					<button class="src-btn"  type="submit"><i class="ion-ios-search-strong"></i></button>
 					<input class="src-input" type="text" value="{{ isset($query) ? $query : ''}}" name="query" placeholder="Type of search">
 				</form>
