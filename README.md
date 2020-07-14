@@ -9,3 +9,8 @@ Description:
  backend: laravel, mysql.
  
  -----------------------------Screenshoot------------------------------------------
+<img src="screnshoot/Capture.PNG"/>
+<img src="screnshoot/Capture2.PNG"/>
+<img src="screnshoot/Capture3.PNG"/>
+<img src="screnshoot/Capture4.PNG"/>
+<img src="screnshoot/Capture5.PNG"/>
