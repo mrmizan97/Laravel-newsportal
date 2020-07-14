@@ -7,10 +7,10 @@
 					<div class="footer-section">
 
                         <a href="{{route('home')}}" class="logo"><img src="{{ asset('assets/frontend/images/logo.png') }}" alt="Logo Image"></a>
-						<p class="copyright">{{ config('app.name') }} @ @php
+						<p class="copyright">{{ config('app.name') }} @ 2018-@php
                             $date1=date('Y');
-                            $date=date('Y')+1;
-                            echo $date1.'-'.$date;
+
+                            echo $date1;
                         @endphp. All rights reserved.</p>
 						<p class="copyright">Developed by <a href="https://github.com/mizan93?tab=projects" target="_blank">M.R Mizan</a></p>
 						<ul class="icons">

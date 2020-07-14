@@ -28,7 +28,7 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Author</th>
-                                            <th>Image</th>
+
                                             <th>Title</th>
                                             <th>Views</>
                                             <th>Is approved</>
@@ -42,7 +42,7 @@
                                         <tr>
                                             <th>ID</th>
                                             <th>Author</th>
-                                            <th>Image</th>
+
                                             <th>Title</th>
                                             <th>Views</>
                                             <th>Is approved</>
@@ -57,7 +57,6 @@
                                         <tr>
                                             <td>{{ $key+1 }}</td>
                                             <td>{{ $post->user->name }}</td>
-                                            <td><img src="{{ Storage::disk('public')->url('post/'.$post->image) }}" alt="{{ $post->name }}" style="width: 60px; height:40px;"></td>
                                             <td>{{ Str::limit($post->title,12)}}</td>
                                             <td>{{ $post->view_count }}</td>
                                             <td>

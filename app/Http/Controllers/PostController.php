@@ -14,7 +14,7 @@ class PostController extends Controller
 
        $post=Post::where('slug',$slug)->approved()->published()->first();
 
-       $blogkey='blog_'.$post->id;
+       $blogkey='blog_'. $post->id;
        if (!Session::has($blogkey)) {
            $post->increment('view_count');
            Session::put($blogkey,1);

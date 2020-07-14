@@ -8,7 +8,8 @@ class AuthorController extends Controller
 {
     public function profile($username)
     {
-     $author= User::where('username',$username)->first(); $posts=$author->posts()->approved()->published()->get();
+     $author= User::where('username',$username)->first();
+     $posts=$author->posts()->approved()->published()->get();
 
      return view('profile', compact('author','posts'));
     }
