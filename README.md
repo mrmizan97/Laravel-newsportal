@@ -3,8 +3,10 @@ username:admin@gmail.com
 password:rootadmin.
 Description:
 
- In this website admin can add,delete or change the post,category,tag and user .User  can create  post.But post published depend on admin.
+ In this website admin can manage post,category,tag and Author, user. Athor  can create post.But post published depend on admin.
  When admin publish post.Email sent to user and subscribed users.
+ 
+ User can like comment to the post 
  
  Frontend: Bootstrap,jquery.
  backend: laravel, mysql.
